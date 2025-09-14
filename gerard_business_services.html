@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gérard Business Services | Gestion Immobilière & Services</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Gérard Business Services - Experts en gestion immobilière, vente de parcelles et maintenance GSM au Bénin. Solutions fiables et professionnelles." />
+  <meta name="keywords" content="gestion immobilière, vente parcelles, achat terrain, maintenance GSM, Bénin, Gérard Business Services" />
+  <meta name="author" content="Gérard Business Services" />
+
+  <!-- OpenGraph -->
+  <meta property="og:title" content="Gérard Business Services" />
+  <meta property="og:description" content="La gestion immobilière en toute confiance. Gestion locative, vente de parcelles et maintenance GSM." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630'%3E%3Crect width='100%25' height='100%25' fill='%23004080'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='48' fill='%23fff' font-family='Arial'%3EG%C3%A9rard Business Services%3C/text%3E%3C/svg%3E" />
+
+  <!-- Inline favicon (simple blue square) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23004080'/%3E%3Ctext x='50' y='57' font-size='40' fill='%23fff' text-anchor='middle' font-family='Arial'%3EG%3C/text%3E%3C/svg%3E" />
+
+  <style>
+    :root{
+      --primary:#004080;
+      --accent:#0066cc;
+      --muted:#6b7280;
+      --radius:12px;
+      --container:1100px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,Arial,sans-serif;color:#222;line-height:1.55;-webkit-font-smoothing:antialiased}
+    header{background:var(--primary);color:#fff;padding:12px 28px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:50}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}
+    .logo{width:48px;height:48px;border-radius:10px;background:#fff;padding:6px;display:grid;place-items:center;color:var(--primary);font-weight:700}
+    nav a{color:#fff;text-decoration:none;margin-left:18px;font-weight:600;transition:opacity .18s}
+    nav a:hover{opacity:.85}
+    main{max-width:var(--container);margin:0 auto;padding:24px}
+    .hero{background:linear-gradient(180deg, rgba(0,64,128,0.65), rgba(0,64,128,0.65)), url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%221200%22 height=%22720%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23e6eef9%22/%3E%3Ccircle cx=%22800%22 cy=%22300%22 r=%22350%22 fill=%22%23004080%22 opacity=%220.07%22/%3E%3C/circle%3E%3C/svg%3E') center/cover no-repeat; color:#fff;border-radius:14px;padding:72px 28px;text-align:center;box-shadow:0 8px 30px rgba(2,6,23,0.12)}
+    .hero h1{font-size:clamp(26px,4vw,44px);margin:0 0 12px;text-shadow:0 6px 18px rgba(0,0,0,.18)}
+    .hero p{margin:0 auto 18px;max-width:760px;color:rgba(255,255,255,0.92)}
+    .btn{background:var(--primary);color:#fff;padding:12px 20px;border-radius:10px;text-decoration:none;font-weight:700;display:inline-block;transition:transform .18s,background .18s}
+    .btn:hover{transform:translateY(-3px);background:var(--accent)}
+    section{padding:48px 0}
+    h2{color:var(--primary);text-align:center;margin-bottom:18px}
+    .grid{display:grid;gap:20px}
+    .services{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+    .card{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 6px 18px rgba(8,15,30,0.06);transition:transform .18s}
+    .card:hover{transform:translateY(-6px)}
+    .card .media{height:160px;background:linear-gradient(135deg,#f3f6fb,#dde8fb);display:flex;align-items:center;justify-content:center}
+    .card svg{width:80%;height:80%;opacity:.9}
+    .card .body{padding:16px}
+    .muted{color:var(--muted);font-size:0.95rem}
+    .contact-card{display:flex;flex-direction:column;align-items:center;gap:10px;padding:18px;border-radius:12px;background:#fff;box-shadow:0 8px 24px rgba(8,15,30,0.06)}
+    .contact-list{text-align:left;max-width:520px;margin:0 auto}
+    .social{display:flex;gap:12px;justify-content:center}
+    .icon{display:inline-grid;place-items:center;width:44px;height:44px;border-radius:10px;background:#f3f4f6}
+    footer{background:var(--primary);color:#fff;padding:26px;text-align:center;margin-top:30px;border-radius:10px}
+    /* responsive */
+    @media (max-width:720px){
+      header{padding:12px}
+      nav a{display:none}
+      .hero{padding:48px 18px}
+    }
+    /* accessibility focus */
+    a:focus{outline:3px solid #ffdf7d;outline-offset:3px}
+  </style>
+</head>
+<body>
+  <header>
+    <a class="brand" href="#accueil" aria-label="Accueil Gérard Business Services">
+      <div class="logo" aria-hidden="true">G</div>
+      <div>
+        <div style="font-weight:700">Gérard Business</div>
+        <div style="font-size:12px;opacity:.9;margin-top:2px">Services - Bénin</div>
+      </div>
+    </a>
+    <nav aria-label="Navigation principale">
+      <a href="#accueil">Accueil</a>
+      <a href="#services">Services</a>
+      <a href="#apropos">À propos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="accueil" class="hero" aria-labelledby="home-title">
+      <h1 id="home-title">La gestion immobilière en toute confiance</h1>
+      <p>Votre partenaire local pour la gestion locative, l'achat/vente de parcelles et la maintenance GSM. Service professionnel, transparent et proche de vous.</p>
+      <a class="btn" href="#contact">Nous contacter</a>
+    </section>
+
+    <section id="services" aria-labelledby="services-title">
+      <h2 id="services-title">Nos services</h2>
+      <div class="grid services">
+        <article class="card" aria-labelledby="s1">
+          <div class="media" role="img" aria-label="Gestion locative">
+            <!-- simple SVG illustration -->
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="6" y="20" width="52" height="36" rx="3" fill="#fff" stroke="#004080"/>
+              <rect x="12" y="26" width="10" height="10" rx="1" fill="#004080"/>
+              <rect x="26" y="26" width="10" height="10" rx="1" fill="#0066cc"/>
+              <rect x="40" y="26" width="10" height="10" rx="1" fill="#004080"/>
+            </svg>
+          </div>
+          <div class="body">
+            <h3 id="s1">Gestion locative</h3>
+            <p class="muted">Valorisation de vos biens, recherche de locataires fiables et suivi professionnel complet.</p>
+          </div>
+        </article>
+
+        <article class="card" aria-labelledby="s2">
+          <div class="media" role="img" aria-label="Maintenance GSM">
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <rect x="18" y="8" width="28" height="48" rx="4" fill="#fff" stroke="#004080"/>
+              <rect x="28" y="12" width="8" height="6" rx="1" fill="#004080"/>
+              <rect x="26" y="50" width="12" height="3" rx="1" fill="#0066cc"/>
+            </svg>
+          </div>
+          <div class="body">
+            <h3 id="s2">Maintenance GSM</h3>
+            <p class="muted">Réparations rapides et pièces de qualité pour smartphones et téléphones.</p>
+          </div>
+        </article>
+
+        <article class="card" aria-labelledby="s3">
+          <div class="media" role="img" aria-label="Vente de parcelles">
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 44 L56 44 L36 14 L8 44 Z" fill="#fff" stroke="#004080"/>
+              <rect x="14" y="46" width="12" height="8" rx="1" fill="#004080"/>
+              <rect x="36" y="46" width="12" height="8" rx="1" fill="#0066cc"/>
+            </svg>
+          </div>
+          <div class="body">
+            <h3 id="s3">Vente & Achat de parcelles</h3>
+            <p class="muted">Accompagnement juridique et administratif pour sécuriser vos transactions foncières.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="apropos" aria-labelledby="about-title">
+      <h2 id="about-title">À propos</h2>
+      <p style="max-width:880px;margin:0 auto;color:#374151">
+        <strong>Gérard Business Services</strong> est une entreprise locale basée à Cotonou, spécialisée dans la gestion immobilière, la maintenance GSM et les transactions foncières. Notre mission : proposer un service fiable, transparent et personnalisé pour vous accompagner à chaque étape de vos projets.
+      </p>
+      <p style="max-width:880px;margin:14px auto 0;color:#374151">Nous travaillons avec des partenaires juridiques et techniques pour garantir la sécurité et la conformité de chaque transaction.</p>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contactez-nous</h2>
+      <div style="display:grid;gap:20px;grid-template-columns:1fr 380px;align-items:start">
+        <div>
+          <div class="contact-list">
+            <p class="muted"><strong>Email :</strong> <a href="mailto:contact@gerardservices.com">contact@gerardservices.com</a></p>
+            <p class="muted"><strong>Téléphone :</strong> <a href="tel:+22900000000">+229 00 00 00 00</a></p>
+            <p class="muted"><strong>Adresse :</strong> Cotonou, Bénin</p>
+            <p class="muted">Horaires : Lun-Ven 9h–17h</p>
+            <div class="social" style="margin-top:12px">
+              <a class="icon" href="https://facebook.com" target="_blank" rel="noopener">f</a>
+              <a class="icon" href="https://wa.me/22900000000" target="_blank" rel="noopener">💬</a>
+              <a class="icon" href="https://linkedin.com" target="_blank" rel="noopener">in</a>
+            </div>
+          </div>
+
+          <h3 style="margin-top:22px">Envoyer un message</h3>
+          <form id="contactForm" class="contact-card" onsubmit="submitForm(event)" autocomplete="on" novalidate>
+            <label style="width:100%;text-align:left;font-weight:600">Nom</label>
+            <input id="name" name="name" type="text" required style="padding:10px;border-radius:8px;border:1px solid #e6e9ef;width:100%"/>
+            <label style="width:100%;text-align:left;font-weight:600;margin-top:8px">Email</label>
+            <input id="email" name="email" type="email" required style="padding:10px;border-radius:8px;border:1px solid #e6e9ef;width:100%"/>
+            <label style="width:100%;text-align:left;font-weight:600;margin-top:8px">Message</label>
+            <textarea id="message" name="message" rows="4" required style="padding:10px;border-radius:8px;border:1px solid #e6e9ef;width:100%"></textarea>
+            <button type="submit" class="btn" style="width:100%;margin-top:10px">Envoyer</button>
+            <div id="formStatus" class="muted" style="font-size:0.95rem;margin-top:8px"></div>
+          </form>
+        </div>
+
+        <aside>
+          <div class="contact-card">
+            <strong>Localisez-nous</strong>
+            <div class="map" style="width:100%;border-radius:10px;overflow:hidden;margin-top:8px">
+              <iframe title="Carte Cotonou" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.0378999999996!2d2.4183!3d6.3703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x102356a12a7c8dfb%3A0x9a0e8c0f85f7a!2sCotonou!5e0!3m2!1sfr!2sbj!4v1234567890" width="100%" height="260" style="border:0" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <small class="muted">La carte est approximative — remplacez l'iframe par les coordonnées exactes si nécessaire.</small>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p style="margin:6px 0">&copy; <span id="year"></span> Gérard Business Services — Tous droits réservés.</p>
+    <small style="opacity:.9">Design simple • Rapide à déployer • Fichier unique</small>
+  </footer>
+
+  <script>
+    // Set year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Smooth scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        const href = a.getAttribute('href');
+        if(href.length>1){
+          e.preventDefault();
+          document.querySelector(href).scrollIntoView({behavior:'smooth',block:'start'});
+        }
+      });
+    });
+
+    // Simple form handling: sends an email via mailto as fallback and shows status.
+    function submitForm(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      const status = document.getElementById('formStatus');
+      if(!name || !email || !message){ status.textContent = 'Merci de remplir tous les champs.'; return; }
+      // Try to open user's email client as fallback
+      const subject = encodeURIComponent('Contact site - ' + name);
+      const body = encodeURIComponent('Nom: ' + name + '%0AEmail: ' + email + '%0A%0A' + message);
+      window.location.href = 'mailto:contact@gerardservices.com?subject=' + subject + '&body=' + body;
+      status.textContent = 'Votre client mail devrait s’ouvrir. Si rien ne se passe, envoyez un email à contact@gerardservices.com';
+    }
+
+    // Accessibility: ensure focus is visible after skip (in case)
+    window.addEventListener('hashchange', ()=>{ const el = document.querySelector(location.hash); if(el) el.focus(); });
+  </script>
+</body>
+</html>
